@@ -51,7 +51,7 @@ YILAN_SITES = [ "yilan" ]
 HUA_TUNG = [ "taitung", "hualien" ]
 ISLAND = [ "matsu", "kinmen", "magong" ]
 
-NEW_SITES = [ "banqiao", "taoyuan", "zhongming", "wanhua", "tainan", "qianjin" ]
+NEW_SITES = [ "banqiao_new", "taoyuan_new", "zhongming_new", "wanhua_new", "tainan_new", "qianjin_new" ]
 
 
 # Algorithm Configuration
@@ -61,6 +61,6 @@ DAYS = [7,14,21,30]
 #'nearest', 'zero', 'slinear', 'quadratic', 'cubic', 'spline', 'barycentric', 'polynomial', 'lagrange', 'linear'
 INTERPOLATE_METHOD = "linear"
 
-FEATURES_METHOD = {'ALL':['HUM','TEM','PM25','HR'], 'HUM':['HUM','PM25'], 'TEM':['TEM','PM25'], 'HR':['HR', 'PM25'], 'PM25':['PM25']}
+FEATURES_METHOD = {'PHTR':['HUM','TEM','PM25','HR'], 'PH':['HUM','PM25'], 'PT':['TEM','PM25'], 'PR':['HR', 'PM25'], 'P':['PM25'], 'PHR':['HUM','PM25','HR'], 'PTR':['PM25','TEM','HR'], 'PHT':['PM25','TEM','HUM']}
 LINEAR_METHOD = ['PassiveAggressiveRegressor','TheilSenRegressor','LinearRegression','BayesianRidge']
 TEST_SIZE = 0.2
